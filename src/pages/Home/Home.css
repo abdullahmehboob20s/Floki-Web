@@ -1,0 +1,156 @@
+.section {
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 1rem;
+}
+
+.section-left {
+  flex: 1;
+  padding: 0 0.75rem;
+}
+.section-right {
+  flex: 1;
+  border: 2px solid red;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-btns button {
+  padding: 1rem 24px;
+}
+
+/* buy-floki */
+.buy-floki {
+  padding: 130px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buy-left {
+  text-align: center;
+  width: 500px;
+}
+.buy-right {
+  flex: 1;
+  max-width: 400px;
+}
+
+.how-to-img {
+  width: 370px;
+  margin-bottom: 75px;
+}
+.buy-left-youtube-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.youtube-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 1rem;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #7957d5;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.youtube-btns img {
+  width: 40px;
+  max-width: none;
+  height: 40px;
+}
+
+.hold-tweet {
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hold-tweet img {
+  position: absolute;
+  display: block;
+  position: absolute;
+  top: -159px;
+  right: 0;
+  width: 200px;
+  max-width: none;
+  height: 200px;
+}
+
+.hold-last-title {
+  margin-bottom: 190px;
+}
+
+.audit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.audit-left {
+  flex: 1;
+}
+.audit-right {
+  flex: 1;
+}
+
+.audit-right {
+  padding: 40px 48px 40px;
+  box-shadow: 25px 22px 0 #ffedd1;
+  border: 1px solid #e6eaee;
+  font-size: 1.2em;
+  border-radius: 6px;
+}
+
+.audit-finance {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.audit-finance-icon {
+  width: 60px;
+  max-width: none;
+  height: 60px;
+}
+
+.moonsheet-phases {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* team-cards */
+.team-cards {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* faq-accordions */
+.faq-accordions-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.faq-accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

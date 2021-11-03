@@ -1,0 +1,309 @@
+/* Cabin Font-Family */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+:root {
+  font-size: 100%;
+
+  --fs-14px: 14px;
+  --fs-16px: 1rem;
+  --fs-17px: 17px;
+  --fs-19px: 19px;
+  --fs-24px: 24px;
+  --fs-20px: 20.8px;
+  --fs-34px: 34px;
+  --fs-36px: 36.8px;
+
+  /* colors */
+  --main-bg: #fff;
+  --secondary-bg: #f4f7f9;
+  --accent-bg: #f4f7f9;
+  --primary: #f6893a;
+  --secondary: #8a8a8a;
+  --text: #222;
+  --border-color: #f7f7f7;
+  --icon-color: #5e6982;
+  --white-color: #fff;
+  --dark-yellow: #4c3b17;
+  --dark-blue: #343f52;
+  --gray: #717171;
+  --red: #cc0f35;
+  --light-red: #feecf0;
+  --light-orange: #ffedd1;
+  --yellow: #f6a429;
+  --light-blue: #ecf0f1;
+  --purple: #7957d5;
+}
+
+.wrapper {
+  padding: 100px 200px;
+}
+
+/* font-sizes */
+.fs-14px {
+  font-size: var(--fs-14px);
+}
+.fs-16px {
+  font-size: var(--fs-16px);
+}
+.fs-17px {
+  font-size: var(--fs-17px);
+}
+.fs-19px {
+  font-size: var(--fs-19px);
+}
+.fs-26px {
+  font-size: 26px;
+}
+.fs-24px {
+  font-size: var(--fs-24px);
+}
+.fs-20px {
+  font-size: var(--fs-20px);
+}
+.fs-34px {
+  font-size: var(--fs-34px);
+}
+.fs-36px {
+  font-size: var(--fs-36px);
+}
+
+/* colors*/
+
+/* main */
+.bg-none {
+  background-color: transparent;
+}
+.main-color {
+  color: var(--main-bg);
+}
+.main-bg {
+  background-color: var(--main-bg);
+}
+
+/* secondary */
+.secondary-color {
+  color: var(--secondary-bg);
+}
+.secondary-bg {
+  background-color: var(--secondary-bg);
+}
+
+/* accent */
+.accent-color {
+  color: var(--accent-bg);
+}
+.accent-bg {
+  background-color: var(--accent-bg);
+}
+
+.primary-color {
+  color: var(--primary);
+}
+.secondary-color {
+  color: var(--secondary);
+}
+.text-color {
+  color: var(--text);
+}
+.white {
+  color: white;
+}
+.dark-yellow {
+  color: var(--dark-yellow);
+}
+.dark-blue {
+  color: var(--dark-blue);
+}
+.gray {
+  color: var(--gray);
+}
+
+.bg-yellow {
+  background: linear-gradient(to right top, #ffea51, #ffcb46, #ffb65f);
+}
+.bg-purple {
+  background: linear-gradient(
+    to right top,
+    #a34ffe,
+    #9448fd,
+    #8440fc,
+    #713afc,
+    #5a34fb
+  );
+}
+
+.red {
+  color: var(--red);
+}
+
+.bg-light-red {
+  background-color: var(--light-red);
+}
+
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+/* configuration */
+a {
+  text-decoration: none;
+}
+.pointer {
+  cursor: pointer;
+}
+
+/* font-weights */
+.weight-9 {
+  font-weight: 900;
+}
+.weight-8 {
+  font-weight: 800;
+}
+.weight-7 {
+  font-weight: 700;
+}
+.weight-6 {
+  font-weight: 600;
+}
+.weight-5 {
+  font-weight: 500;
+}
+.weight-4 {
+  font-weight: 400;
+}
+.weight-3 {
+  font-weight: 300;
+}
+
+/* layouts */
+.row {
+  display: flex;
+}
+.row.column {
+  flex-direction: column;
+}
+.row.justify-between {
+  justify-content: space-between;
+}
+.row.align-center {
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.flex-1 {
+  flex: 1;
+}
+.w-full {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+
+/* margins */
+.mx-auto {
+  margin: 0 auto;
+}
+.mb-100px {
+  margin-bottom: 100px;
+}
+.mb-30px {
+  margin-bottom: 30px;
+}
+.mb-35px {
+  margin-bottom: 35px;
+}
+.mb-50px {
+  margin-bottom: 50px;
+}
+.mb-40px {
+  margin-bottom: 40px;
+}
+.mb-45px {
+  margin-bottom: 45px;
+}
+.mb-20px {
+  margin-bottom: 20px;
+}
+.mb-25px {
+  margin-bottom: 25px;
+}
+.mb-15px {
+  margin-bottom: 15px;
+}
+.mb-10px {
+  margin-bottom: 10px;
+}
+.mb-5px {
+  margin-bottom: 5px;
+}
+
+/* radiuses */
+.radius-6px {
+  border-radius: 6px;
+}
+.radius-4px {
+  border-radius: 4px;
+}
+
+/* paddings */
+.px-24px {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.py-15px {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.px-48px {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+.p-12px {
+  padding: 12px;
+}
+
+/* borders */
+.border-none {
+  border: none;
+}
+
+.border-b-red {
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 2px;
+}
+
+.outline-none {
+  outline: none;
+}
+
+/* buttons */
+.button-wrapper {
+  padding: 1rem 24px;
+}
+
+/* displays */
+.block {
+  display: block;
+}
