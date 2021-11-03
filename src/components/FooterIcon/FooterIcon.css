@@ -1,0 +1,9 @@
+.footer-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+.footer-icon img {
+  width: 100%;
+  height: 100%;
+}

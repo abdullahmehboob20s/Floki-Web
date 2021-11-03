@@ -67,6 +67,9 @@
 .fs-20px {
   font-size: var(--fs-20px);
 }
+.fs-32px {
+  font-size: 32px;
+}
 .fs-34px {
   font-size: var(--fs-34px);
 }
@@ -306,4 +309,32 @@ a {
 /* displays */
 .block {
   display: block;
+}
+
+@media (max-width: 1408px) {
+  .wrapper {
+    padding: 100px 66.6666666667px;
+  }
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    padding: 100px 28.5714285714px;
+  }
+
+  .mb-100px {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .buy-floki {
+    padding-bottom: 50px !important;
+  }
 }

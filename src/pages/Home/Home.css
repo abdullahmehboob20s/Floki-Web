@@ -1,9 +1,8 @@
 .section {
   display: flex;
   align-items: center;
-  padding-left: 200px;
-  padding-right: 200px;
   gap: 1rem;
+  padding-top: 0;
 }
 
 .section-left {
@@ -12,13 +11,17 @@
 }
 .section-right {
   flex: 1;
-  border: 2px solid red;
+}
+.section-right img {
+  width: 100%;
+  padding: 0 4rem;
 }
 
 .hero-btns {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .hero-btns button {
@@ -27,7 +30,8 @@
 
 /* buy-floki */
 .buy-floki {
-  padding: 130px 200px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,13 +77,13 @@
   height: 40px;
 }
 
-.hold-tweet {
+.hold-tweet-wrapper {
   width: fit-content;
   margin: 0 auto;
   position: relative;
 }
 
-.hold-tweet img {
+.hold-tweet-wrapper img {
   position: absolute;
   display: block;
   position: absolute;
@@ -153,4 +157,129 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+/* footer */
+.footer-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-details-right {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .buy-floki {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: unset;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .buy-right {
+    min-width: 100% !important;
+  }
+
+  .hold > p {
+    text-align: left;
+  }
+
+  .hold-tweet-wrapper {
+    width: 100%;
+  }
+  .hold-tweet-wrapper iframe {
+    width: 100% !important;
+  }
+
+  .audit {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .audit-left {
+    width: 100%;
+  }
+  .audit-left.px-48px {
+    padding: 0 !important;
+  }
+
+  .audit-right {
+    margin-right: 2rem;
+  }
+
+  .TEAM-wrapper > p {
+    text-align: left;
+  }
+
+  .team-cards {
+    flex-direction: column;
+  }
+
+  .faq-wrapper > p {
+    text-align: left;
+  }
+
+  .faq-accordions-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    text-align: center;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-details {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .footer-details-right {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-btns {
+    flex-direction: column-reverse;
+  }
+
+  .hero-btns button {
+    width: 100%;
+  }
+
+  .audit-left button {
+    width: 100%;
+  }
+
+  .moonsheet-phases {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .moonsheet-wrapper > p {
+    text-align: left;
+  }
+
+  .footer-details-left > div > p {
+    word-break: break-all;
+  }
 }

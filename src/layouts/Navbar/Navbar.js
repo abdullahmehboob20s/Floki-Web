@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "./Navbar.css";
 
 function Navbar() {
+  const [open, setOpen] = React.useState(false);
   const navbarRef = useRef();
 
   useEffect(() => {
@@ -20,6 +21,10 @@ function Navbar() {
     };
   });
 
+  const navbarToggler = () => {
+    setOpen(!open);
+  };
+
   return (
     <div className="navbar-wrapper">
       <div className="navbar-header">
@@ -36,7 +41,25 @@ function Navbar() {
             alt=""
           />
         </div>
-        <div className="navbar-links">
+
+        <div className="brand-icons-btns">
+          <img
+            src="https://theflokiinu.com/images/pancakeswap-logo.png"
+            alt=""
+          />
+          <img src="https://theflokiinu.com/images/uniswap-logo.png" alt="" />
+
+          <div
+            className={`navbar-hamburger ${open ? "active" : ""}`}
+            onClick={navbarToggler}
+          >
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
+        </div>
+
+        <div className={`navbar-links ${open ? "open" : ""}`}>
           <div className="navbar-links-wrapper">
             <div className="navbar-link active">Home</div>
             <div className="navbar-link">Buy</div>
