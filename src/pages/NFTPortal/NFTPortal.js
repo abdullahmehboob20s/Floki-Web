@@ -14,9 +14,16 @@ import egg8 from "assets/images/egg8.gif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { EffectCube } from "swiper";
-import planet1 from "assets/images/planet1.jpeg";
-import planet2 from "assets/images/planet2.jpeg";
-import planet3 from "assets/images/planet3.jpeg";
+import unnamed1 from "assets/images/unnamed-1.jpg";
+import unnamed2 from "assets/images/unnamed-2.jpg";
+import unnamed3 from "assets/images/unnamed-3.jpg";
+
+import moon from "assets/images/astronaut_moon.webp";
+import dragon from "assets/images/dragon.gif";
+import house_night from "assets/images/house_night.webp";
+import pad from "assets/images/pad.webp";
+import starstation from "assets/images/starstation.webp";
+import unnamed5 from "assets/images/unnamed5.png";
 
 SwiperCore.use([EffectCube]);
 
@@ -24,7 +31,7 @@ function NFTPortal() {
   return (
     <div>
       <Navbar navbarHeader={false} navbarLinks={false} />
-      <div className="nft-portal">
+      {/* <div className="nft-portal">
         <div className="nft-portal-left">
           <p className="fs-16px yellow weight-6 mb-10px">NFT Portal</p>
           <p className="fs-34px dark-blue weight-6 mb-25px">
@@ -45,31 +52,10 @@ function NFTPortal() {
         <div className="nft-portal-right">
           <img src="https://theflokiinu.com/images/claim.png" alt="" />
         </div>
-      </div>
-
-      <div className="wrapper egg-gallery-wrapper">
-        <p className="yellow text-center weight-8 fs-16px mb-10px">Eggs</p>
-        <p className="dark-blue text-center weight-8 fs-34px mb-20px">
-          Don't Break Them
-        </p>
-        <p className="gray text-center weight-8 fs-19px mb-50px">
-          Keep's Your Hen and Eggs save
-        </p>
-
-        <div className=" egg-gallery">
-          <img src={egg1} alt="" />
-          <img src={egg2} alt="" />
-          <img src={egg3} alt="" />
-          <img src={egg4} alt="" />
-          <img src={egg5} alt="" />
-          <img src={egg6} alt="" />
-          <img src={egg7} alt="" />
-          <img src={egg8} alt="" />
-        </div>
-      </div>
+      </div> */}
 
       {/* cube */}
-      <div className="wrapper cube-gallery-wrapper">
+      <div className="wrapper cube-gallery-wrapper" style={{ paddingTop: 0 }}>
         <p className="yellow text-center weight-8 fs-16px mb-10px">Cube</p>
         <p className="dark-blue text-center weight-8 fs-34px mb-20px">
           Play with it
@@ -89,18 +75,37 @@ function NFTPortal() {
           className="cube-gallery"
         >
           <SwiperSlide>
-            <img src={planet1} />
+            <img src={unnamed1} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={planet2} />
+            <img src={unnamed2} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={planet3} />
+            <img src={unnamed3} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={planet1} />
+            <img src={unnamed1} />
           </SwiperSlide>
         </Swiper>
+      </div>
+
+      <div className="wrapper egg-gallery-wrapper">
+        <p className="yellow text-center weight-8 fs-16px mb-10px">Eggs</p>
+        <p className="dark-blue text-center weight-8 fs-34px mb-20px">
+          Don't Break Them
+        </p>
+        <p className="gray text-center weight-8 fs-19px mb-50px">
+          Keep's Your Hen and Eggs save
+        </p>
+
+        <div className="egg-gallery column-3">
+          <img src={moon} alt="" />
+          <img src={dragon} alt="" />
+          <img src={house_night} alt="" />
+          <img src={pad} alt="" />
+          <img src={starstation} alt="" />
+          <img src={unnamed5} alt="" />
+        </div>
       </div>
     </div>
   );

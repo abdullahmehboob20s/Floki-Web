@@ -306,6 +306,14 @@ a {
   padding: 1rem 24px;
 }
 
+.yellow-bg-hover:hover {
+  box-shadow: 4px 4px 0 #a34ffe;
+}
+
+.purple-bg-hover:hover {
+  box-shadow: 4px 4px 0 #ffea51;
+}
+
 /* displays */
 .block {
   display: block;

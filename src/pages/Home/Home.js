@@ -100,15 +100,15 @@ function Home() {
             Floki Inuversity.
           </p>
 
-          <button className="pointer py-15px px-24px bg-light-red red radius-4px border-none outline-none fs-16px weight-9 mb-30px">
+          <button className=" py-15px px-24px bg-light-red red radius-4px border-none outline-none fs-16px weight-9 mb-30px">
             Please set slippage to 4% for Uniswap & PancakeSwap
           </button>
 
           <div className="hero-btns">
-            <button className="border-none outline-none bg-yellow radius-4px fs-17px dark-yellow weight-8">
+            <button className="pointer border-none outline-none bg-yellow radius-4px fs-17px dark-yellow weight-8 yellow-bg-hover">
               Buy on PancakeSwap
             </button>
-            <button className="border-none outline-none bg-purple radius-4px fs-17px white weight-8">
+            <button className="pointer purple-bg-hover border-none outline-none bg-purple radius-4px fs-17px white weight-8">
               Buy on Uniswap
             </button>
           </div>
@@ -118,27 +118,6 @@ function Home() {
             src="https://external-preview.redd.it/nKqNnVC_In31I0DC9PH-hG9KxxITeZ3OyFVbs9S-BkY.jpg?width=640&crop=smart&auto=webp&s=2450c030beb58fe047ca16f1d019c1bb13b2839b"
             alt=""
           />
-        </div>
-      </div>
-
-      <div className="wrapper egg-gallery-wrapper">
-        <p className="yellow text-center weight-8 fs-16px mb-10px">Eggs</p>
-        <p className="dark-blue text-center weight-8 fs-34px mb-20px">
-          Don't Break Them
-        </p>
-        <p className="gray text-center weight-8 fs-19px mb-50px">
-          Keep's Your Hen and Eggs save
-        </p>
-
-        <div className=" egg-gallery">
-          <img src={egg1} alt="" />
-          <img src={egg2} alt="" />
-          <img src={egg3} alt="" />
-          <img src={egg4} alt="" />
-          <img src={egg5} alt="" />
-          <img src={egg6} alt="" />
-          <img src={egg7} alt="" />
-          <img src={egg8} alt="" />
         </div>
       </div>
 
@@ -177,6 +156,27 @@ function Home() {
         </Swiper>
       </div>
 
+      <div className="wrapper egg-gallery-wrapper">
+        <p className="yellow text-center weight-8 fs-16px mb-10px">Eggs</p>
+        <p className="dark-blue text-center weight-8 fs-34px mb-20px">
+          Don't Break Them
+        </p>
+        <p className="gray text-center weight-8 fs-19px mb-50px">
+          Keep's Your Hen and Eggs save
+        </p>
+
+        <div className=" egg-gallery">
+          <img src={egg1} alt="" />
+          <img src={egg2} alt="" />
+          <img src={egg3} alt="" />
+          <img src={egg4} alt="" />
+          <img src={egg5} alt="" />
+          <img src={egg6} alt="" />
+          <img src={egg7} alt="" />
+          <img src={egg8} alt="" />
+        </div>
+      </div>
+
       <div className="wrapper buy-floki  bg-light-orange mb-100px">
         <div className="buy-left">
           <img
@@ -209,10 +209,10 @@ function Home() {
             Please set slippage to 4% for Uniswap & PancakeSwap
           </div>
           <div className="hero-btns">
-            <button className="border-none outline-none bg-yellow radius-4px fs-17px dark-yellow weight-8">
+            <button className="pointer yellow-bg-hover border-none outline-none bg-yellow radius-4px fs-17px dark-yellow weight-8">
               Buy on PancakeSwap
             </button>
-            <button className="border-none outline-none bg-purple radius-4px fs-17px white weight-8">
+            <button className="pointer purple-bg-hover border-none outline-none bg-purple radius-4px fs-17px white weight-8">
               Buy on Uniswap
             </button>
           </div>
@@ -268,11 +268,11 @@ function Home() {
             <p className="gray  weight-6 fs-19px mb-50px">
               The token has been certified as fully safe by Solidity.
             </p>
-            <button className="border-none outline-none bg-yellow radius-4px fs-17px dark-yellow weight-8 button-wrapper mb-15px">
+            <button className="pointer yellow-bg-hover border-none outline-none bg-yellow radius-4px fs-17px dark-yellow weight-8 button-wrapper mb-15px">
               Binance Smart Chain
             </button>{" "}
             <br />
-            <button className="border-none outline-none bg-purple radius-4px fs-17px white weight-8 button-wrapper">
+            <button className="pointer purple-bg-hover border-none outline-none bg-purple radius-4px fs-17px white weight-8 button-wrapper">
               Ethereum Block Chain
             </button>
           </div>
@@ -374,7 +374,7 @@ function Home() {
             img="https://theflokiinu.com/images/vikings.png"
           />
         </div>
-        <div className="button-wrapper bg-purple fs-26px radius-4px white weight-9 w-fit mx-auto">
+        <div className="pointer purple-bg-hover button-wrapper bg-purple fs-26px radius-4px white weight-9 w-fit mx-auto">
           Hall of Fame
         </div>
       </div>
@@ -411,7 +411,7 @@ function Home() {
           >
             Join the Floki Inu community and let's ride to Valhalla.
           </p>
-          <div className="pointer button-wrapper bg-purple fs-17px radius-4px white weight-9 w-fit mb-50px ">
+          <div className="pointer purple-bg-hover button-wrapper bg-purple fs-17px radius-4px white weight-9 w-fit mb-50px ">
             Join Our Telegram
           </div>
 

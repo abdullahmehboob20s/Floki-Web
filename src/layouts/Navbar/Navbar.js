@@ -43,13 +43,13 @@ function Navbar(props) {
         className={`navbar ${navbarLinks ? "" : "no-links"}`}
         ref={navbarRef}
       >
-        <div className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <img
             className="navbar-logo"
             src="https://theflokiinu.com/images/floki-logo.png"
             alt=""
           />
-        </div>
+        </Link>
 
         {navbarLinks ? (
           <div className="brand-icons-btns">

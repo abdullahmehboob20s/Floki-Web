@@ -182,6 +182,10 @@
   gap: 1rem;
 }
 
+.egg-gallery.column-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .egg-gallery img {
   width: 100%;
 }
@@ -313,5 +317,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  .egg-gallery.column-3 {
+    grid-template-columns: 1fr 1fr;
   }
 }
