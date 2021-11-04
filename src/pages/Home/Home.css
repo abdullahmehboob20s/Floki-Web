@@ -299,4 +299,8 @@
   .how-to-img {
     width: 60% !important;
   }
+
+  .swiper-wrapper {
+    height: fit-content !important;
+  }
 }
