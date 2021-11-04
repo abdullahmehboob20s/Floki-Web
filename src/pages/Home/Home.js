@@ -217,7 +217,7 @@ function Home() {
       </div>
 
       <div className="wrapper">
-        <div className="hold mb-100px">
+        <div className="hold ">
           <p className="yellow text-center weight-8 fs-16px mb-10px">
             HOLD FLOKI
           </p>
