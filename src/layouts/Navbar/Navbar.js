@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar(props) {
+  const { navbarHeader = true, navbarLinks = true } = props;
   const [open, setOpen] = React.useState(false);
   const navbarRef = useRef();
 
@@ -27,13 +29,20 @@ function Navbar() {
 
   return (
     <div className="navbar-wrapper">
-      <div className="navbar-header">
-        <p className="white weight-6">Swap your $FLOKI from ETH to BSC</p>
-        <div className="navbar-header-btn dark-yellow fs-16px pointer weight-5 bg-yellow radius-6px">
-          Floki Bridge
+      {navbarHeader ? (
+        <div className="navbar-header">
+          <p className="white weight-6">Swap your $FLOKI from ETH to BSC</p>
+          <div className="navbar-header-btn dark-yellow fs-16px pointer weight-5 bg-yellow radius-6px">
+            Floki Bridge
+          </div>
         </div>
-      </div>
-      <div className="navbar" ref={navbarRef}>
+      ) : (
+        ""
+      )}
+      <div
+        className={`navbar ${navbarLinks ? "" : "no-links"}`}
+        ref={navbarRef}
+      >
         <div className="navbar-brand">
           <img
             className="navbar-logo"
@@ -42,44 +51,55 @@ function Navbar() {
           />
         </div>
 
-        <div className="brand-icons-btns">
-          <img
-            src="https://theflokiinu.com/images/pancakeswap-logo.png"
-            alt=""
-          />
-          <img src="https://theflokiinu.com/images/uniswap-logo.png" alt="" />
+        {navbarLinks ? (
+          <div className="brand-icons-btns">
+            <img
+              src="https://theflokiinu.com/images/pancakeswap-logo.png"
+              alt=""
+            />
+            <img src="https://theflokiinu.com/images/uniswap-logo.png" alt="" />
 
-          <div
-            className={`navbar-hamburger ${open ? "active" : ""}`}
-            onClick={navbarToggler}
-          >
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
+            <div
+              className={`navbar-hamburger ${open ? "active" : ""}`}
+              onClick={navbarToggler}
+            >
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
           </div>
-        </div>
-
-        <div className={`navbar-links ${open ? "open" : ""}`}>
-          <div className="navbar-links-wrapper">
-            <div className="navbar-link active">Home</div>
-            <div className="navbar-link">Buy</div>
-            <div className="navbar-link">Blog</div>
-            <div className="navbar-link">Roadmap</div>
-            <div className="navbar-link">Team</div>
-            <div className="navbar-link">FAQ</div>
-            <div className="navbar-link">Careers</div>
-            <div className="navbar-link">NFT Portal</div>
-            <div className="navbar-link">Whitepaper</div>
+        ) : (
+          ""
+        )}
+        {navbarLinks ? (
+          <div className={`navbar-links ${open ? "open" : ""}`}>
+            <div className="navbar-links-wrapper">
+              <div className="navbar-link active">Home</div>
+              <div className="navbar-link">Buy</div>
+              <div className="navbar-link">Blog</div>
+              <div className="navbar-link">Roadmap</div>
+              <div className="navbar-link">Team</div>
+              <div className="navbar-link">FAQ</div>
+              <div className="navbar-link">Careers</div>
+              <Link to="/nft-portal" className="navbar-link">
+                NFT Portal
+              </Link>
+              <div className="navbar-link">Whitepaper</div>
+            </div>
+            <div className="navbar-links-btns">
+              <button className="navbar-btn dark-yellow navbar-header-btn bg-yellow radius-4px">
+                Buy on Pancake Swap
+              </button>
+              <button className="navbar-btn white radius-4px">
+                Buy on Uniswap
+              </button>
+            </div>
           </div>
-          <div className="navbar-links-btns">
-            <button className="navbar-btn dark-yellow navbar-header-btn bg-yellow radius-4px">
-              Buy on Pancake Swap
-            </button>
-            <button className="navbar-btn white radius-4px">
-              Buy on Uniswap
-            </button>
+        ) : (
+          <div className="fs-17px button-wrapper bg-yellow radius-4px weight-8 pointer">
+            Connect Wallet
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,36 @@
+.nft-portal {
+  height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  gap: 5rem;
+}
+
+.nft-portal-left {
+  flex: 1;
+}
+.nft-portal-right {
+  flex: 1;
+
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e6eaee;
+  border-radius: 6px;
+  box-shadow: 25px 22px 0 #ffedd1;
+}
+
+.nft-portal-right img {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .nft-portal {
+    flex-direction: column;
+    padding: 0 30px;
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+}
