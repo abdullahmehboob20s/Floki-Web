@@ -14,7 +14,7 @@
 }
 .section-right img {
   width: 100%;
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
 }
 
 .hero-btns {
@@ -48,7 +48,6 @@
 
 .how-to-img {
   width: 370px;
-  margin-bottom: 75px;
 }
 .buy-left-youtube-btns {
   display: flex;
