@@ -215,7 +215,6 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className="wrapper">
         <div className="hold ">
           <p className="yellow text-center weight-8 fs-16px mb-10px">
