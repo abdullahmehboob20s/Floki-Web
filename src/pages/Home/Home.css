@@ -90,7 +90,10 @@
   right: 0;
   width: 150px;
   max-width: none;
-  /* height: 180px; */
+
+  top: -97px;
+  right: 57px;
+  width: 101px;
   object-fit: contain;
 }
 
@@ -139,11 +142,9 @@
 
 /* team-cards */
 .team-cards {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 /* faq-accordions */
@@ -191,6 +192,11 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 3rem;
+  }
+
+  .team-cards {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
   }
 }
 
@@ -283,5 +289,14 @@
   }
   .egg-gallery.column-3 {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .hold-tweet-wrapper img {
+    width: 90px;
+    top: -85px;
+  }
+
+  .how-to-img {
+    width: 60% !important;
   }
 }
