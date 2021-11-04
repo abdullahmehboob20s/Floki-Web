@@ -300,6 +300,10 @@
     width: 60% !important;
   }
 
+  .buy-left {
+    width: 100%;
+  }
+
   .swiper-wrapper {
     height: fit-content !important;
   }
