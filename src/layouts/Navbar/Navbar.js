@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import logoImg from "assets/images/logo.png";
 
 function Navbar(props) {
   const { navbarHeader = true, navbarLinks = true } = props;
@@ -44,11 +45,7 @@ function Navbar(props) {
         ref={navbarRef}
       >
         <Link to="/" className="navbar-brand">
-          <img
-            className="navbar-logo"
-            src="https://theflokiinu.com/images/floki-logo.png"
-            alt=""
-          />
+          <img className="navbar-logo" src={logoImg} alt="" />
         </Link>
 
         {navbarLinks ? (

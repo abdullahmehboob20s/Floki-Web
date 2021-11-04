@@ -92,6 +92,7 @@
   width: 200px;
   max-width: none;
   height: 200px;
+  object-fit: contain;
 }
 
 .hold-last-title {
@@ -157,21 +158,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-/* footer */
-.footer-details {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.footer-details-right {
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 /* egg-gallery */
@@ -264,24 +250,6 @@
   .faq-accordions-wrapper {
     grid-template-columns: 1fr;
   }
-
-  .footer {
-    text-align: center;
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-details {
-    flex-direction: column;
-    gap: 5rem;
-  }
-
-  .footer-details-right {
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 750px) {
@@ -304,10 +272,6 @@
 
   .moonsheet-wrapper > p {
     text-align: left;
-  }
-
-  .footer-details-left > div > p {
-    word-break: break-all;
   }
 }
 
