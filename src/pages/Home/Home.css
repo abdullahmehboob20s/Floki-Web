@@ -80,6 +80,7 @@
   width: fit-content;
   margin: 0 auto;
   position: relative;
+  margin-top: 100px;
 }
 
 .hold-tweet-wrapper img {
@@ -143,7 +144,7 @@
 /* team-cards */
 .team-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
 

@@ -13,7 +13,7 @@ import egg8 from "assets/images/egg8.gif";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import SwiperCore, { EffectCube } from "swiper";
+import SwiperCore, { EffectCube, Autoplay } from "swiper";
 import unnamed1 from "assets/images/unnamed-1.jpg";
 import unnamed2 from "assets/images/unnamed-2.jpg";
 import unnamed3 from "assets/images/unnamed-3.jpg";
@@ -25,7 +25,7 @@ import pad from "assets/images/pad.webp";
 import starstation from "assets/images/starstation.webp";
 import unnamed5 from "assets/images/unnamed5.png";
 
-SwiperCore.use([EffectCube]);
+SwiperCore.use([EffectCube, Autoplay]);
 
 function NFTPortal() {
   return (
@@ -55,7 +55,10 @@ function NFTPortal() {
       </div> */}
 
       {/* cube */}
-      <div className="wrapper cube-gallery-wrapper" style={{ paddingTop: 0 }}>
+      <div
+        className="wrapper cube-gallery-wrapper bg-light-orange"
+        style={{ paddingTop: 50 }}
+      >
         <p className="yellow text-center weight-8 fs-16px mb-10px">Cube</p>
         <p className="dark-blue text-center weight-8 fs-34px mb-20px">
           Play with it
@@ -66,6 +69,7 @@ function NFTPortal() {
         <Swiper
           effect={"cube"}
           grabCursor={true}
+          loop={true}
           cubeEffect={{
             shadow: true,
             slideShadows: true,
@@ -73,6 +77,10 @@ function NFTPortal() {
             shadowScale: 0.94,
           }}
           className="cube-gallery"
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
         >
           <SwiperSlide>
             <img src={unnamed1} />
@@ -89,7 +97,7 @@ function NFTPortal() {
         </Swiper>
       </div>
 
-      <div className="wrapper egg-gallery-wrapper">
+      <div className="wrapper egg-gallery-wrapper ">
         <p className="yellow text-center weight-8 fs-16px mb-10px">Eggs</p>
         <p className="dark-blue text-center weight-8 fs-34px mb-20px">
           Don't Break Them

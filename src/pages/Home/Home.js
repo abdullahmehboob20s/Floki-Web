@@ -17,7 +17,7 @@ import egg7 from "assets/images/egg7.gif";
 import egg8 from "assets/images/egg8.gif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import SwiperCore, { EffectCube } from "swiper";
+import SwiperCore, { EffectCube, Autoplay } from "swiper";
 import planet1 from "assets/images/planet1.jpeg";
 import planet2 from "assets/images/planet2.jpeg";
 import planet3 from "assets/images/planet3.jpeg";
@@ -26,7 +26,7 @@ import hiImg from "assets/images/hi-img.png";
 import rocketImg from "assets/images/rocket.png";
 import catImg from "assets/images/cat.png";
 
-SwiperCore.use([EffectCube]);
+SwiperCore.use([EffectCube, Autoplay]);
 
 function Home() {
   let phases = [
@@ -118,7 +118,28 @@ function Home() {
           </div>
         </div>
         <div className="section-right">
-          <img src={hiImg} alt="" />
+          <div className="hold-tweet-wrapper">
+            <img src={catImg} alt="" className="hold-tweet img" />
+            <iframe
+              id="twitter-widget-0"
+              scrolling="no"
+              frameborder="0"
+              allowtransparency="true"
+              allowfullscreen="true"
+              class=""
+              style={{
+                position: "static",
+                visibility: "visible",
+                width: "420px",
+                height: "455px",
+                display: "block",
+                flexGrow: 1,
+              }}
+              title="Twitter Tweet"
+              src="https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdHdlZXRfZW1iZWRfOTU1NSI6eyJidWNrZXQiOiJodGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3NwYWNlX2NhcmQiOnsiYnVja2V0Ijoib2ZmIiwidmVyc2lvbiI6bnVsbH19&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1437179881260032016&amp;lang=en&amp;origin=https%3A%2F%2Ftheflokiinu.com%2F&amp;sessionId=5e30ebd0a5aca3da9bef9c3cf01cb3e2ff9ce327&amp;theme=light&amp;widgetsVersion=f001879%3A1634581029404&amp;width=550px"
+              data-tweet-id="1437179881260032016"
+            ></iframe>
+          </div>
         </div>
       </div>
 
@@ -133,6 +154,7 @@ function Home() {
         </p>
         <Swiper
           effect={"cube"}
+          loop={true}
           grabCursor={true}
           cubeEffect={{
             shadow: true,
@@ -141,6 +163,10 @@ function Home() {
             shadowScale: 0.94,
           }}
           className="cube-gallery"
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
         >
           <SwiperSlide>
             <img src={planet1} />
@@ -183,11 +209,9 @@ function Home() {
           <img className="how-to-img" src={rocketImg} alt="" />
           <div className="buy-left-youtube-btns">
             <Link className="youtube-btns">
-              <img src="https://theflokiinu.com/images/youtube.svg" alt="" />{" "}
               <p>Watch How To Buy Floki (ETH)</p>
             </Link>
             <Link className="youtube-btns">
-              <img src="https://theflokiinu.com/images/youtube.svg" alt="" />{" "}
               <p>Watch How To Buy Floki (BSC)</p>
             </Link>
           </div>
@@ -215,7 +239,30 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="wrapper">
+
+      <div className="section wrapper ">
+        <div className="section-left">
+          <p className="fs-36px dark-blue weight-8 mb-40px">
+            Meet Floki Inu, the community-owned crypto inspired by Elon Musk!
+          </p>
+          <p className="gray weight-6 fs-20px mb-20px">
+            A new crypto coin birthed by fans & members of the Shiba Inu
+            community, Floki Inu (FLOKI) is inspired by #DogeFather Elon Musk’s
+            very own Shiba Inu.
+          </p>
+          <p className="gray weight-6 fs-20px mb-30px">
+            FLOKI is working on three flagship utility projects: an NFT gaming
+            metaverse known as Valhalla, an NFT and merchandise marketplace
+            known as FlokiPlaces, and a content/education platform known as
+            Floki Inuversity.
+          </p>
+        </div>
+        <div className="section-right">
+          <img src={hiImg} alt="" />
+        </div>
+      </div>
+
+      {/* <div className="wrapper">
         <div className="hold ">
           <p className="yellow text-center weight-8 fs-16px mb-10px">
             HOLD FLOKI
@@ -250,7 +297,7 @@ function Home() {
             ></iframe>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="wrapper">
         <div className="audit">
@@ -355,16 +402,6 @@ function Home() {
             subtitle="Community"
             img="https://theflokiinu.com/images/vikings.png"
           />
-          <TeamCard
-            title="Floki Inu"
-            subtitle="Hero"
-            img="https://theflokiinu.com/images/floki.png"
-          />
-          <TeamCard
-            title="The Floki Vikings"
-            subtitle="Community"
-            img="https://theflokiinu.com/images/vikings.png"
-          />
         </div>
         <div className="pointer purple-bg-hover button-wrapper bg-purple fs-26px radius-4px white weight-9 w-fit mx-auto">
           Hall of Fame
@@ -383,13 +420,14 @@ function Home() {
 
           <div className="faq-accordions-wrapper">
             <div className="faq-accordions">
-              <Accordion title="How did the Floki token come into existence?" />
-              <Accordion title="What exchanges are we listed and what are the plans for future listings?  " />
-              <Accordion title="Why was Floki V2 launched?" />
+              <Accordion title="How can I buy Floki?" />
+              <Accordion title="How can I buy Floki?" />
+              <Accordion title="How can I buy Floki?" />
             </div>
             <div className="faq-accordions">
               <Accordion title="How can I buy Floki?" />
-              <Accordion title="Does Floki Inu have plans for marketing and getting influencers on board? Do you have funds for this?" />
+              <Accordion title="How can I buy Floki?" />
+              <Accordion title="How can I buy Floki?" />
             </div>
           </div>
         </div>
