@@ -1,15 +1,6 @@
 import Navbar from "layouts/Navbar/Navbar";
 import React from "react";
-import { Link } from "react-router-dom";
 import "./NFTPortal.css";
-import egg1 from "assets/images/egg1.gif";
-import egg2 from "assets/images/egg2.gif";
-import egg3 from "assets/images/egg3.gif";
-import egg4 from "assets/images/egg4.gif";
-import egg5 from "assets/images/egg5.gif";
-import egg6 from "assets/images/egg6.gif";
-import egg7 from "assets/images/egg7.gif";
-import egg8 from "assets/images/egg8.gif";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
