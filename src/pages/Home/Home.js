@@ -202,6 +202,19 @@ function Home() {
           <img src={egg7} alt="" />
           <img src={egg8} alt="" />
         </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingTop: "60px",
+          }}
+        >
+          <button className="button-wrapper pointer purple-bg-hover border-none outline-none bg-purple radius-4px fs-17px white weight-8">
+            Mint
+          </button>
+        </div>
       </div>
 
       <div className="wrapper buy-floki  bg-light-orange mb-100px">
