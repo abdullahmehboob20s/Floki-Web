@@ -211,7 +211,10 @@ function Home() {
             paddingTop: "60px",
           }}
         >
-          <button className="button-wrapper pointer purple-bg-hover border-none outline-none bg-purple radius-4px fs-17px white weight-8">
+          <button
+            style={{ width: 200 }}
+            className="button-wrapper pointer purple-bg-hover border-none outline-none bg-purple radius-4px fs-17px white weight-8"
+          >
             Mint
           </button>
         </div>
