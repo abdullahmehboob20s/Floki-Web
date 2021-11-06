@@ -47,7 +47,7 @@ function NFTPortal() {
 
       {/* cube */}
       <div
-        className="wrapper cube-gallery-wrapper bg-light-orange"
+        className=" cube-gallery-wrapper bg-light-orange"
         style={{ paddingTop: 50 }}
       >
         <p className="yellow text-center weight-8 fs-16px mb-10px">Cube</p>
@@ -57,35 +57,56 @@ function NFTPortal() {
         <p className="gray text-center weight-8 fs-19px mb-50px">
           Keep's Your Hen and Eggs save
         </p>
-        <Swiper
-          effect={"cube"}
-          grabCursor={true}
-          loop={true}
-          cubeEffect={{
-            shadow: true,
-            slideShadows: true,
-            shadowOffset: 20,
-            shadowScale: 0.94,
-          }}
-          className="cube-gallery"
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false,
-          }}
-        >
-          <SwiperSlide>
-            <img src={unnamed1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={unnamed2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={unnamed3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={unnamed1} />
-          </SwiperSlide>
-        </Swiper>
+
+        <div className="section   wrapper ">
+          <div className="section-left">
+            <p className="fs-36px dark-blue weight-8 mb-40px">
+              the community-owned crypto inspired by Elon Musk!
+            </p>
+            <p className="gray weight-6 fs-20px mb-20px">
+              A new crypto coin birthed by fans & members of the Shiba Inu
+              community, Floki Inu (FLOKI) is inspired by #DogeFather Elon
+              Musk’s very own Shiba Inu.
+            </p>
+            <p className="gray weight-6 fs-20px mb-30px">
+              FLOKI is working on three flagship utility projects: an NFT gaming
+              metaverse known as Valhalla, an NFT and merchandise marketplace
+              known as FlokiPlaces, and a content/education platform known as
+              Floki Inuversity.
+            </p>
+          </div>
+          <div className="section-right">
+            <Swiper
+              effect={"cube"}
+              grabCursor={true}
+              loop={true}
+              cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              }}
+              className="cube-gallery"
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+            >
+              <SwiperSlide>
+                <img src={unnamed1} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={unnamed2} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={unnamed3} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={unnamed1} />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
       </div>
 
       <div className="wrapper egg-gallery-wrapper ">
